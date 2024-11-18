@@ -6,7 +6,7 @@ Files and Data:
 Strain εxx εxy and εyy CNNs trained with 100,000 samples and Strain E_XX refined using pre-trained CNN εxx with 100,000 samples
 
 - Original CNN εxx at 100k i.e. "model_save2024_v2**xx**_**100k**_unet_L_non.keras"
-- Refined CNN εxx at 100k with new 100 samples with frozen encoder  i.e. "model_save2024_**XX100k**_refine**100**_**validrefine**_**freeze**.keras"
+- Refined CNN εxx at 100k with new 100 samples with frozen encoder  i.e. "model_save2024_**XX100k**_refine**100**__**validrefine**__**freeze**.keras"
 
 Includes Validation (Original True Set- FE generated in MATLAB data format) 
 
