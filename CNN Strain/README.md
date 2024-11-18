@@ -3,10 +3,10 @@
 **Demonstration of Python Script for CNN U-Net model**
 Files and Data:
 
-Strain E_XX E_XY and E_YY CNNs trained with 100,000 samples and Strain E_XX refined using pre-trained CNN E_XX with 100,000 samples
+Strain εxx εxy and εyy CNNs trained with 100,000 samples and Strain E_XX refined using pre-trained CNN εxx with 100,000 samples
 
-- Original CNN exx at 100k i.e. "model_save2024_v2xx_100k_unet_L_non.keras"
-- Refined CNN exx at 100k with new 100 samples with frozen encoder  i.e. "model_save2024_XX100k_refine100_validrefine_freeze.keras"
+- Original CNN εxx at 100k i.e. "model_save2024_v2xx_100k_unet_L_non.keras"
+- Refined CNN εxx at 100k with new 100 samples with frozen encoder  i.e. "model_save2024_XX100k_refine100_validrefine_freeze.keras"
 
 Includes Validation (Original True Set- FE generated in MATLAB data format) 
 
