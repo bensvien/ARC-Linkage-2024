@@ -1,10 +1,18 @@
-**APWSHM 2024 Conference **
+**Data availability for APWSHM 2024 Conference **
 
 **Demonstration of Python Script for CNN U-Net model**
+Files and Data:
 
-Strain E_XX CNN pre-trained with 100,000 samples - "model_save2024_v2xx_100k_unet_L_non.keras"
+Strain E_XX E_XY and E_YY CNNs trained with 100,000 samples and Strain E_XX refined using pre-trained CNN E_XX with 100,000 samples
 
-Includes Validation (Original True Set- FE generated in MATLAB data format) - "strain2024_validation_data_100_true.mat"
+- Original CNN exx at 100k i.e. "model_save2024_v2xx_100k_unet_L_non.keras"
+- Refined CNN exx at 100k with new 100 samples with frozen encoder  i.e. "model_save2024_XX100k_refine100_validrefine_freeze.keras"
+
+Includes Validation (Original True Set- FE generated in MATLAB data format) 
+
+- "strain2024_validation_data_100_true.mat"
+
+
 
 **Predicting Membrane Strains with a Deep Learning Encoder-Decoder Convolutional Neural Network Architecture Trained on Synthetic Finite Element Data**
 
