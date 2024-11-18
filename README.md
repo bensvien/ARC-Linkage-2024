@@ -1,6 +1,7 @@
-APWSHM 2024 Conference 
+**APWSHM 2024 Conference **
 
 Demonstration of Python Script for CNN U-Net model
+
 Strain E_XX CNN pre-trained with 100,000 samples - "model_save2024_v2xx_100k_unet_L_non.keras"
 Includes Validation (Original True Set- FE generated in MATLAB data format) - "strain2024_validation_data_100_true.mat"
 
