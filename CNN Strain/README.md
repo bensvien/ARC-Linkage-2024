@@ -2,6 +2,8 @@
 
 ***10TH ASIA-PACIFIC WORKSHOPS ON STRUCTURAL HEALTH MONITORING 2024 (APWSHM 2024) 8th-10th December 2024 Conference***
 
+Reference: B. S. Vien, T. Kuen, L. R. F. Rose and W. K. Chiu. "Predicting Membrane Strains with a Deep Learning Encoder-Decoder Convolutional Neural Network Architecture Trained on Synthetic Finite Element Data." In 10th Asia-Pacific Workshop on Structural Health Monitoring 2024, Sendai, Japan, 8th-10th December.
+
 **Demonstration of Python Script for CNN U-Net model**
 Files and Data:
 
