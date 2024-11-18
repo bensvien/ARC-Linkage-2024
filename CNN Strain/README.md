@@ -1,19 +1,21 @@
-**Data availability for 10TH ASIA-PACIFIC WORKSHOPS ON STRUCTURAL HEALTH MONITORING 2024 (APWSHM 2024) 8th-10th December 2024 Conference **
+## **Predicting Membrane Strains with a Deep Learning Encoder-Decoder Convolutional Neural Network Architecture Trained on Synthetic Finite Element Data**
+
+***10TH ASIA-PACIFIC WORKSHOPS ON STRUCTURAL HEALTH MONITORING 2024 (APWSHM 2024) 8th-10th December 2024 Conference***
 
 **Demonstration of Python Script for CNN U-Net model**
 Files and Data:
 
-Strain εxx εxy and εyy CNNs trained with 100,000 samples and Strain E_XX refined using pre-trained CNN εxx with 100,000 samples
+Strain εxx,  εxy and εyy CNNs trained with 100,000 samples and Strain εxx refined using pre-trained CNN εxx with 100,000 samples
 
 - Original CNN εxx at 100k i.e. "model_save2024_v2**xx**_**100k**_unet_L_non.keras"
-- Refined CNN εxx at 100k with new 100 samples with frozen encoder network  i.e. "model_save2024_XX100k_refine100_validrefine_freeze.keras"
+- Refined CNN εxx at 100k with new 100 samples with frozen encoder network  i.e. "model_save2024_XX100k_refine100_validrefine_**freeze**.keras"
 
 Includes Validation (Original True Set- FE generated in MATLAB data format) 
 
 - "strain2024_validation_data_100_true.mat"
 
 
-
+**Conference Paper**
 **Predicting Membrane Strains with a Deep Learning Encoder-Decoder Convolutional Neural Network Architecture Trained on Synthetic Finite Element Data**
 
 Benjamin Steven Vien 1,a *, Thomas Kuen 2,b , Louis Raymond Francis Rose 1,c and Wing Kong Chiu 1,d 
