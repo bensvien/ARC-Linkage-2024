@@ -16,6 +16,7 @@ Includes Validation (Original True Set- FE generated in MATLAB data format)
 
 
 **Conference Paper**
+
 **Predicting Membrane Strains with a Deep Learning Encoder-Decoder Convolutional Neural Network Architecture Trained on Synthetic Finite Element Data**
 
 Benjamin Steven Vien 1,a *, Thomas Kuen 2,b , Louis Raymond Francis Rose 1,c and Wing Kong Chiu 1,d 
