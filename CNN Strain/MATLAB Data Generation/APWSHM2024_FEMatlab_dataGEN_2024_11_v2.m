@@ -54,7 +54,7 @@ ztotal={};
 listtotal={};
 
 tic
-for i=(length(ztotal)+1):1:10000
+for i=(length(ztotal)+1):1:10000 %Change number of data required here (Default) 10,000 samples
     [zval list0,R]=strain_gen(model);
     fprintf(['Solved ' num2str(i) ' \n'])
     ztotal{i}=zval;
