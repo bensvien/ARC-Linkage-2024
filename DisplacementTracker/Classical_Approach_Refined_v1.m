@@ -130,6 +130,18 @@ release(vidPlayer)
 if outputV==1
     close(outputVideo);
 end
-%% Saving h5
-h5create('saved_objC.h5', '/saved_objC', size(saved_objC));
-h5write('saved_objC.h5', '/saved_objC', saved_objC);
+%% Saving MAT as h5
+save('saved_objC.mat', 'saved_objC');
+%%
+
+filename = 'saved_objC.h5';  % Name of the HDF5 file
+dataset = '/saved_objC';      % Name of the dataset inside the file
+
+% If the file already exists and you want to overwrite it, delete it first:
+if exist(filename, 'file')
+    delete(filename);
+end
+
+% Create the dataset. The third argument is the size of saved_objC.
+h5create(filename, dataset, size(saved_objC));
+h5write(filename, dataset, saved_objC);
