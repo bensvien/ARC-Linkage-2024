@@ -6,7 +6,7 @@ Created on Thu Feb  6 09:00:21 2025
 
 Demonstration:
 """
-
+## TO INSTALL
 # !pip install torch torchvision
 # !pip install imageio
 # !pip install matplotlib
@@ -50,18 +50,9 @@ if have_qpoints:
     saved_objC_tensor = torch.tensor(saved_objC, dtype=torch.float32).to(device) 
     saved_objC_tensor[:, :2, :] = saved_objC_tensor[:, :2, :] - 1
 
-    nan_mask = torch.isnan(saved_objC_tensor[:, :2, :]).any(dim=(1, 2))  # Shape: (1500,)
-
-    # Step 2: Remove rows that contain NaN in x or y for any frame
-    saved_objC_tensor = saved_objC_tensor[~nan_mask]
-
-    print('Loaded MAT Queries Points (NaN removed)')
+    print('Loaded MAT Queries Points ')
     print(type(saved_objC_tensor))
-    print("New shape after NaN removal:", saved_objC_tensor.shape)
-
-    # print('Loaded MAT Queries Points ')
-    # print(type(saved_objC_tensor))
-    # print(saved_objC_tensor.shape)
+    print(saved_objC_tensor.shape)
 
     
 if have_refpoints:
@@ -105,7 +96,7 @@ if combined_tensor is not None:
 else:
     print("No valid points available for combination.")
     
-
+#%%
 print("--------------------------------------------------------------")
 print("Video Loading.....")
 video_path = './Input Files/IMG_7296.mp4'
@@ -113,7 +104,7 @@ frames = iio.imread(video_path, plugin='FFMPEG')  # Read video frames FFMPEG mus
 print("Video Loaded!")
 #%% Check Frame Image
 print("--------------------------------------------------------------")
-check_frame=True
+check_frame=False
 
 if check_frame:
     idx = 0
@@ -142,7 +133,7 @@ if check_frame:
     plt.show()
 #%%
 
-frames = frames[1:480:4]#Default for GPU 70 Frames/40 Gridsize
+frames = frames[1:480:6]#Default for GPU 70 Frames/40 Gridsize
 video_tensor = torch.tensor(frames).permute(0, 3, 1, 2)[None].float().to(device)  # Shape: [1, T, C, H, W]
 
 # Check if combined_tensor exists and has valid points
