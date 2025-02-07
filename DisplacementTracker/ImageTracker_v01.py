@@ -231,6 +231,15 @@ def plot_single_frame_with_gradient_visibility(frame, tracks, visibility, frame_
 frame_index = 6  # Index of the frame you want to plot
 plot_single_frame_with_gradient_visibility(frames[frame_index], pred_tracks_np, pred_visibility, frame_index)
 plot_single_frame_with_gradient(frames[frame_index], pred_tracks_np, frame_index)
+
+#%% Saving Data
+data_to_save = {
+    'pred_tracks': pred_tracks,
+    'pred_visibility': pred_visibility
+}
+
+# Save the dictionary to a file (e.g., "my_data.pt")
+torch.save(data_to_save, 'filename01.pt')
     
 #%% Call cotracker Visualizer
 from cotracker.utils.visualizer import Visualizer
