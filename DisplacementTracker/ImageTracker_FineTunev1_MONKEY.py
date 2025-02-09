@@ -45,3 +45,5 @@ def get_new_forward(model):
     model.train()
     for param in model.parameters():
         param.requires_grad = True
+
+model.forward = get_new_forward(model)
