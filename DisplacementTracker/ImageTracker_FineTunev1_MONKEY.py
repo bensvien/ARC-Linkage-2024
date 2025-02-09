@@ -33,3 +33,15 @@ def get_new_forward(model):
         return out
 
     return new_forward.__get__(model, type(model))
+
+
+    model = torch.hub.load(
+        './co-tracker', #Local Drive
+        'cotracker3_offline',
+        source='local'
+    ).to(device)
+    print("Model Loaded!")
+    
+    model.train()
+    for param in model.parameters():
+        param.requires_grad = True
