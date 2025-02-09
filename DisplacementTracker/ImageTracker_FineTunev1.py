@@ -22,3 +22,14 @@ print("CUDA available:", torch.cuda.is_available())
 print("CUDA device count:", torch.cuda.device_count())
 print("CUDA device name:", torch.cuda.get_device_name(0) if torch.cuda.is_available() else "No GPU detected")
 torch.cuda.empty_cache()
+
+#%% Monkey Patching
+def get_new_forward(model):
+    orig_forward = model.forward
+
+    def new_forward(self, x, queries=None):
+        with torch.enable_grad():
+            out = orig_forward(x, queries=queries)
+        return out
+
+    return new_forward.__get__(model, type(model))
