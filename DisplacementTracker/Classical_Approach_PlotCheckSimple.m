@@ -8,7 +8,7 @@
 % Specimen 32x32 Grib
 % Assuming your variable is named 'data' with size 1024x2x483
 
-data=ordered_data;
+data=%%ADD DATA VARIABLE HERE%%;
 frame_index = 1; % Select the frame to visualize
 
 % Extract x and y coordinates for the selected frame
@@ -28,6 +28,7 @@ end
 xlabel('X Coordinate');
 ylabel('Y Coordinate');
 title(['Scatter Plot of Frame ', num2str(frame_index)]);
+set(gcf,'Color','w')
 axis equal;
 grid on;
 hold off;
