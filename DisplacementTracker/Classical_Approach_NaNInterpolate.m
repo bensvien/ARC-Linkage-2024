@@ -5,6 +5,8 @@
 % Requirements
 %	Version '23.2'	'MATLAB' (R2023b)
 
+%% Ensure the ordered code is performed first!
+
 load('saved_objC_ordered.mat')
 
 data=ordered_data;
