@@ -47,9 +47,9 @@ else:
     print(f"Local CoTracker3 is using device: {device}")
 
 # Option to load saved fine-tuned weights:
-reload_model = True
+reload_model = False
 if reload_model:
-    state_dict = torch.load("./model_saved/cotracker3_finetuned_2025_03_18_v1SYN_freezeFNET_50samplesEPOCH100.pth", map_location=device)
+    state_dict = torch.load("./model_saved/model_dummy.pth", map_location=device)
     cotracker.load_state_dict(state_dict)
     # For further retraining set to train(), for inference use eval()
     cotracker.eval()
@@ -135,3 +135,4 @@ if just_empty:
 #%%
 
 # save_video_tensor(extended_video, "extended_video.mp4", fps=10, extra=0)
+
