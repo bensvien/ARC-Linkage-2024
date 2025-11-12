@@ -11,3 +11,7 @@ Reference: B. S. Vien, S. Lu, T. Kuen, and W. K. Chiu. "Single-Image Fine-Tuning
 Co-Tracker Core modifications were implemented to enable gradient calculation during fine-tuning and to support non-contiguous tensors associated with the query points. 
 
 Files and Data:
+
+ImageTracker_v05.py
+
+- For local CPU/GPU 
