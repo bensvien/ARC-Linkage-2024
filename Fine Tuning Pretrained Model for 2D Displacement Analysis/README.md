@@ -14,4 +14,8 @@ Files and Data:
 
 ImageTracker_v05.py
 
-- For local CPU/GPU 
+- For local CPU/GPU, run pretrained/fine-tuned CoTracker models.
+
+ImageTracker_FineTune_Synthetic_DatasetAWS.ipynb
+
+- For AWS, fine-tuning CoTracker models using synthetic data generation.
